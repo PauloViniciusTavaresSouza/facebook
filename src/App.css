@@ -11,7 +11,13 @@ body {
 }
 
 /* --Estilização do  menu, dando enfase no  lado  esquerdo --------------------------------------------------------------- */
-
+.container-principal {
+  display: flex;
+  justify-content: space-between;
+}
+.container-mid {
+  max-width: 600px;
+}
 .header {
   background-color: #fff;
   padding: 10px 0;
@@ -127,4 +133,68 @@ body {
 
 .feedForm input:focus {
   outline: 0;
+}
+
+.feedIcons {
+  padding: 20px 40px;
+  display: flex;
+}
+
+.iconSingle {
+  width: 33.3%;
+  text-align: center;
+}
+
+.iconSingle svg {
+  vertical-align: middle;
+  font-size: 25px;
+  color: #f02849;
+}
+
+.iconSingle.img svg {
+  color: #45bd62;
+}
+
+.iconSingle.emoji svg {
+  color: yellow;
+}
+.iconSingle span {
+  font-weight: 500;
+  color: gray;
+  margin: 0 10px;
+}
+
+.feedPostSingle {
+  margin: 20px 0;
+  background-color: #fff;
+}
+
+.feedPost__profile {
+  padding: 10px;
+}
+.feedPost__profile h3 {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 8px 10px;
+}
+.feedPost__profile h3 > span {
+  font-weight: normal;
+  font-size: 15px;
+}
+.feedPost__profile img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+
+.feedPost__content p {
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.feedPost__content img {
+  width: 100%;
+  display: block;
 }
